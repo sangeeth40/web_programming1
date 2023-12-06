@@ -1,0 +1,34 @@
+<html>
+<head>
+<style>
+body{
+display:flex;
+flex-direction:row;
+justify-content:center;
+}
+img{
+width:400px;
+height:400px;
+}
+
+</style>
+</head>
+
+<body>
+<img src="car1.jfif" id="car1">
+
+<script>
+var img = document.getElementById("car1")
+img.addEventListener("mouseover",change1)
+img.addEventListener("mouseout",change2)
+function change1(){
+
+img.src="car2.jfif"
+}
+function change2(){
+img.src="car1.jfif"
+}
+
+</script>
+</body>
+</html>
